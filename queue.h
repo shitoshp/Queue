@@ -3,7 +3,12 @@
 typedef struct Node Node;
 struct Node{
     char *myString;
-    Node* next
+    Node* next;
 };
 
-queue* create_queue();
+typedef struct Queue Queue;
+struct Queue{
+    Node* first;
+    Node* last;
+};
+Queue* create_queue();

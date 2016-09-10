@@ -2,13 +2,14 @@
 #include <stdio.h>
 #include <string.h>
 
-struct queue queue;
-queue* create_queue(){
-    queue* first = NULL;
-    queue* Q = first;
-    queue* last = NULL;
-    queue* n = NULL;
-
+Queue* create_queue(){
+    Queue* q = (Queue*) malloc (sizeof(Queue));
+    q->first = NULL;
+    q->last = NULL;
+    return q;
 }
 
 
+void enqueue(Queue* Q, char* item){
+
+}
