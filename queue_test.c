@@ -11,5 +11,7 @@ int main(){
 	enqueue(Q, j);
 	enqueue(Q, l);
 	print_queue(Q);
+
+	
 	return 0;
 }

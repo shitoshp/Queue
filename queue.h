@@ -12,6 +12,12 @@ struct Queue{
     Node* first;
     Node* last;
 };
+
+
+
 Queue* create_queue();
 void enqueue(Queue* Q, char* item);
+char* dequeue(Queue* Q);
 void print_queue(Queue *Q);
+void flush_queue(Queue* Q);
+void free_queue(Queue* Q);
